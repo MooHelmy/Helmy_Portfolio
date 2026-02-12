@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Helmy Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="css/master.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#home"><img src="assets/logo.png" alt="logo" /></a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-label">👋 Welcome to my portfolio</div>
+            <h1>Hi, I'm <span class="gradient-text">Mohamed Helmy</span><br>Sofware Engineer</h1>
+            <p>Flutter Engineer with 3+ years of experience building scalable , secure , and high-performance mobile &
+                cross-platform applications , about creating innovative mobile applications that solve real problems
+                problems.
+                Specialized in Dart , Flutter, and modern Mobile applications development.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="assets/resume.pdf" target="_blank" class="btn btn-outline">Download CV</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mohamed-helmy-a3b549294/">in</a>
+                <a href="https://github.com/MooHelmy"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/201140080928">W</a>
+                <a href="https://www.youtube.com/@Eng_mo723"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/myPhoto3.png" alt="Mohamed Helmy">
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-title">
+            <span>MY WORK</span>
+            <h2>Featured Projects</h2>
+        </div>
+
+        <div class="projects-wrapper">
+            <div class="project">
+                <img src="assets/ChatApp.png" alt="Chat App" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">Chat App</h3>
+                    <p class="project-desc">Secure messaging platform with Firebase Authentication and real-time updates
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Real-time</span>
+                        <span class="tag">Auth</span>
+                    </div>
+                    <a href="https://github.com/MooHelmy/chat-app" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/ecommerc.png" alt="E-Commerce App" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">Advanced E-commerce App</h3>
+                    <p class="project-desc">is a high-performance, scalable E-commerce solution built with Flutter. The
+                        architecture is designed to handle hybrid data sources, fetching dynamic product catalogs via
+                        RESTful APIs while managing real-time user data, authentication, and synchronization through
+                        Firebase.</p>
+                    <div class="project-tags">
+                        <span class="tag">MVVM</span>
+                        <span class="tag">Firebase (Auth, Firestore, Cloud Storage)</span>
+                        <span class="tag">SharedPreferences</span>
+                        <span class="tag">Cubit</span>
+                        <span class="tag">Dio</span>
+
+                    </div>
+                    <a href="https://github.com/MooHelmy/Ecommerce_app" class="project-link">View
+                        Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/NewsApp.png" alt="News" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">News Cloud</h3>
+                    <p class="project-desc">News aggregator with Material Design</p>
+                    <div class="project-tags">
+                        <span class="tag">Material Design</span>
+                        <span class="tag">Retrofit</span>
+                        <span class="tag">Glide</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Complete-Android/tree/main/NewsApp"
+                        class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/Stopwatch.png" alt="Stopwatch" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">Stopwatch</h3>
+                    <p class="project-desc">Precision timer with threading</p>
+                    <div class="project-tags">
+                        <span class="tag">Threading</span>
+                        <span class="tag">Animations</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Android-Intern/tree/main/Stopwatch"
+                        class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-more">
+            <button class="btn btn-outline" onclick="showAll()">View All Projects</button>
+        </div>
+    </section>
+
+    <section id="all-projects" style="display: none;">
+        <div class="section-title">
+            <span>ALL WORK</span>
+            <h2>All Projects</h2>
+        </div>
+
+        <div class="projects-wrapper">
+            <div class="project">
+                <img src="assets/ChatApp.png" alt="Chat App" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">Chat App</h3>
+                    <p class="project-desc">Secure messaging platform with Firebase Authentication and real-time updates
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Real-time</span>
+                        <span class="tag">Auth</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Complete-Android/tree/main/ChatApp"
+                        class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/WeatherApp.png" alt="Weather" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">Weather App</h3>
+                    <p class="project-desc">Weather forecast with Retrofit API</p>
+                    <div class="project-tags">
+                        <span class="tag">Retrofit</span>
+                        <span class="tag">UX</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Complete-Android/tree/main/WeatherApp"
+                        class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/NewsApp.png" alt="News" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">News Cloud</h3>
+                    <p class="project-desc">News aggregator with Material Design</p>
+                    <div class="project-tags">
+                        <span class="tag">Material Design</span>
+                        <span class="tag">Retrofit</span>
+                        <span class="tag">Glide</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Complete-Android/tree/main/NewsApp"
+                        class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/ToDoApp.png" alt="ToDo App" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">ToDo App</h3>
+                    <p class="project-desc">Task manager with SQLite, custom DatePicker, and foreground services</p>
+                    <div class="project-tags">
+                        <span class="tag">Handler</span>
+                        <span class="tag">ViewPager</span>
+                        <span class="tag">SharedPreferences</span>
+                        <span class="tag">Fragment</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">Notifications</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Android-Intern/tree/main/ToDoApp" class="project-link">View
+                        Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/Stopwatch.png" alt="Stopwatch" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">Stopwatch</h3>
+                    <p class="project-desc">Precision timer with threading</p>
+                    <div class="project-tags">
+                        <span class="tag">Threading</span>
+                        <span class="tag">Animations</span>
+                    </div>
+                    <a href="https://github.com/SolimanMahm/Android-Intern/tree/main/Stopwatch"
+                        class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/TicTacToe.png" alt="TicTacToe" class="project-img">
+                <div class="project-body">
+                    <h3 class="project-title">TicTacToe</h3>
+                    <p class="project-desc">Two-player strategy game</p>
+                    <div class="project-tags">
+                        <span class="tag">Game</span>
+                        <span class="tag">Regex pattern</span>
+                        <span class="tag">Dialog</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-more">
+            <button class="btn btn-outline" onclick="hideAll()">Show Less</button>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="section-title">
+            <span>CAREER</span>
+            <h2>Experience</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Backend Django Developer</h3>
+                    <div class="timeline-company">Military Service</div>
+                    <div class="timeline-date">Mar 2025 - Present</div>
+                    <p class="timeline-desc">Developed web-based systems for equipment management and fleet tracking
+                        with asset registration, report generation, and operational efficiency improvements.</p>
+                </div>
+                <div class="timeline-dot"></div>
+                <div style="flex: 1;"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div style="flex: 1;"></div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Operations Specialist</h3>
+                    <div class="timeline-company">RoadRunner</div>
+                    <div class="timeline-date">Oct 2024 - Dec 2024</div>
+                    <p class="timeline-desc">Liaison between delivery teams and technical support, ensuring accurate
+                        order preparation and professional customer service.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Android Developer</h3>
+                    <div class="timeline-company">Freelancer</div>
+                    <div class="timeline-date">2023 - Present</div>
+                    <p class="timeline-desc">Developing mobile applications using Java and XML with focus on Material
+                        Design and modern development practices.</p>
+                </div>
+                <div class="timeline-dot"></div>
+                <div style="flex: 1;"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div style="flex: 1;"></div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Bachelor of Computer Science</h3>
+                    <div class="timeline-company">Benha University - BFCAI</div>
+                    <div class="timeline-date">2020 - 2024</div>
+                    <p class="timeline-desc">Graduated with Very Good grade (3.60 GPA). Excellent graduation project.
+                        Specialized in Computer Science and AI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-title">
+            <span>EXPERTISE</span>
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-flutter-plain colored"></i></div>
+                <div class="skill-name">Flutter</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-dart-plain colored"></i></div>
+                <div class="skill-name">Dart</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-cubes"></i></div>
+                <div class="skill-name">Bloc / Cubit</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-layer-group colored" style="color: #039BE5;"></i></div>
+                <div class="skill-name">Clean Arch</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-diagram-project colored" style="color: #FFB300;"></i>
+                </div>
+                <div class="skill-name">MVVM</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                <div class="skill-name">Hive & Sqflite</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="skill-name">Dio & Retrofit</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-git-plain colored"></i></div>
+                <div class="skill-name">Git</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-java-plain colored"></i></div>
+                <div class="skill-name">Java</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-c-plain colored"></i></div>
+                <div class="skill-name">C</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-python-plain colored"></i></div>
+                <div class="skill-name">Python</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-kotlin-plain colored"></i></div>
+                <div class="skill-name">Kotlin</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-cplusplus-plain colored"></i></div>
+                <div class="skill-name">C++</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-cubes"></i></div>
+                <div class="skill-name">OOP</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-android-plain colored"></i></div>
+                <div class="skill-name">Android</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                <div class="skill-name">Storage</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-html5-plain colored"></i></div>
+                <div class="skill-name">HTML</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-code-branch"></i></div>
+                <div class="skill-name">Data Structures</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-django-plain colored"></i></div>
+                <div class="skill-name">Django</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-firebase-plain colored"></i></div>
+                <div class="skill-name">Firebase</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-css3-plain colored"></i></div>
+                <div class="skill-name">CSS</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                <div class="skill-name">Algorithms</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="skill-name">GitHub</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-gear"></i></div>
+                <div class="skill-name">Services</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="devicon-javascript-plain colored"></i></div>
+                <div class="skill-name">JavaScript</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                <div class="skill-name">Problem Solving</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <div class="skill-name">JSON & API</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-broom"></i></div>
+                <div class="skill-name">Clean Code</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fa-solid fa-filter"></i></div>
+                <div class="skill-name">Data Cleaning</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-title">
+            <span>GET IN TOUCH</span>
+            <h2>Contact Me</h2>
+        </div>
+
+        <form id="emailForm" class="contact-form">
+            <div class="form-group">
+                <label class="form-label">Your Email</label>
+                <input type="email" id="email" name="from_email" class="form-input" placeholder="your.email@example.com"
+                    required>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Your Name</label>
+                <input type="text" id="name" name="from_name" class="form-input" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?"
+                    required>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Your message..."
+                    required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p>📧 soliiimahmoud70@gmail.com</p>
+            <p>📱 +20 1028721772</p>
+            <p>📍 Kafr Shukr, Al Qalyubia, Egypt</p>
+        </div>
+    </section>
+
+    <div class="scroll-top" id="scrollTop"></div>
+    <script src="js/script.js"></script>
+
+</body>
