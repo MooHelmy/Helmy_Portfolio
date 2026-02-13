@@ -9,6 +9,7 @@
 function showAll() {
     document.getElementById('projects').style.display = 'none';
     document.getElementById('all-projects').style.display = 'block';
+    document.querySelectorAll('#all-projects .extra-project').forEach(el => el.style.display = '');
     document.getElementById('all-projects').scrollIntoView({ behavior: 'smooth' });
 }
 
