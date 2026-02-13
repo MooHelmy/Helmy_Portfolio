@@ -1,7 +1,7 @@
 
 (function () {
     emailjs.init({
-        publicKey: "eKOPCqQaW3yGWrH31",
+        publicKey: "WAv3XJBr3CXxzLm0i",
     });
 })();
 
@@ -22,7 +22,7 @@ function hideAll() {
 document.getElementById('emailForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_6r3npu9', 'template_5matxdn', this)
+    emailjs.sendForm('service_uciwlt8', 'template_j8v806g', this)
         .then(() => {
             alert('✅ Message sent successfully!');
             this.reset();
