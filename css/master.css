@@ -531,6 +531,148 @@ section {
     color: #0a0a0a;
 }
 
+/* Courses Section Styles */
+.courses-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.course-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(0, 255, 135, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 255, 135, 0.1);
+}
+
+.course-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.course-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.course-card:hover .course-img {
+    transform: scale(1.1);
+}
+
+.course-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.course-card:hover .course-overlay {
+    opacity: 1;
+}
+
+.play-btn {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #00ff87, #60efff);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a0a0a;
+    font-size: 24px;
+    text-decoration: none;
+    transform: scale(0);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.course-card:hover .play-btn {
+    transform: scale(1);
+}
+
+.course-body {
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-category {
+    font-size: 12px;
+    color: #00ff87;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.course-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.course-desc {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.course-stats {
+    font-size: 13px;
+    color: #888;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.course-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.course-link:hover {
+    color: #00ff87;
+}
+
 /* Add these media queries at the end of your master.css file */
 
 /* Tablets and smaller laptops (max-width: 1024px) */

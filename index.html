@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="css/master.css" />
+    <style>
+        .courses-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .course-card {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .courses-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -22,6 +39,7 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#courses">Courses</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -465,6 +483,85 @@
             <div class="skill">
                 <div class="skill-icon"><i class="fa-solid fa-filter"></i></div>
                 <div class="skill-name">Data Cleaning</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="section-title">
+            <span>LEARNING</span>
+            <h2>My Courses</h2>
+        </div>
+        <div class="courses-wrapper">
+            <!-- Course 1 -->
+            <div class="course-card">
+                <div class="course-image-container">
+                    <img src="assets/assembly.png" alt="Flutter Course" class="course-img">
+                    <div class="course-overlay">
+                        <a href="https://www.youtube.com/@Eng_mo723" target="_blank" class="play-btn"><i
+                                class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="course-body">
+                    <span class="course-category">Low Level Programming</span>
+                    <h3 class="course-title">Mastering Assembly Language (x86)</h3>
+                    <p class="course-desc">This course is a deep dive into the heart of computing. It is designed to
+                        bridge the gap between high-level logic and raw hardware execution. By mastering Assembly
+                        Language (x86), you aren't just learning a language; you are learning how software truly
+                        breathes within the processor..</p>
+                    <div class="course-footer">
+                        <span class="course-stats"><i class="fa-brands fa-youtube"></i> Free Course</span>
+                        <a href="https://www.youtube.com/watch?v=W17LoIrPsU0&list=PLQGhfFPMzkRoX73TL2Ev5ohWtQEWWiVph"
+                            target="_blank" class="course-link">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 2 -->
+            <div class="course-card">
+                <div class="course-image-container">
+                    <img src="assets/embeded.jpg" alt="Embedded Systems Course" class="course-img">
+                    <div class="course-overlay">
+                        <a href="https://www.youtube.com/@Eng_mo723" target="_blank" class="play-btn"><i
+                                class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="course-body">
+                    <span class="course-category">Embedded Systems</span>
+                    <h3 class="course-title">Embedded Systems Programming</h3>
+                    <p class="course-desc">Deep dive into embedded systems programming, microcontrollers, and real-time
+                        applications.</p>
+                    <div class="course-footer">
+                        <span class="course-stats"><i class="fa-brands fa-youtube"></i> Free Course</span>
+                        <a href="https://www.youtube.com/watch?v=Xq-YFi05-iQ&list=PLQGhfFPMzkRobwS-2oFSy6qH3G2knSqd9&pp=sAgC"
+                            target="_blank" class="course-link">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 3 -->
+            <div class="course-card">
+                <div class="course-image-container">
+                    <img src="assets/googleCloud.jpg" alt="Embedded Systems Course" class="course-img">
+                    <div class="course-overlay">
+                        <a href="https://www.youtube.com/@Eng_mo723" target="_blank" class="play-btn"><i
+                                class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="course-body">
+                    <span class="course-category">Cloud Computing Fundamentals</span>
+                    <h3 class="course-title">Introduction to Google Cloud </h3>
+                    <p class="course-desc">This course is a strategic exploration of the modern computing landscape. It
+                        is designed to demystify the transition from local hardware limitations to the boundless
+                        potential of the Cloud. By understanding Cloud Architecture (IaaS, PaaS, SaaS) and
+                        virtualization, you aren't just learning a set of services; you are mastering the art of
+                        building scalable, flexible, and cost-efficient ecosystems where software breathes across global
+                        networks.
+                        applications.</p>
+                    <div class="course-footer">
+                        <span class="course-stats"><i class="fa-brands fa-youtube"></i> Free Course</span>
+                        <a href="https://www.youtube.com/watch?v=jRdpzl72F98&list=PLQGhfFPMzkRpxSYff5lGr0vVybNhY9SOh&pp=sAgC"
+                            target="_blank" class="course-link">Watch Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
